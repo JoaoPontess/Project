@@ -1,26 +1,117 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #252525;
+    font-family: "Poppins";
+    font-size: 18px;
+    margin: 0;
+    display: grid;
+    place-items: center; /* Location in page */
+    height: 100vh;
+    background: #1a2027;
 
 }
 
-h1 {
-    font-variant: small-caps;
-    color: rgb(224, 224, 31);
-    font-size: 40px;
-    text-align: center;
+ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none; /* No style list */
 }
 
-p {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 5px 10px 0 10px;
-    background-color: rgb(236, 255, 127);
-    color: rgb(0, 0, 0);
-    text-align: center;
+nav {
+    width: 100%;
+    box-shadow: 
+    0 0 10px
+    rgb(0 0 0 / 8%);
 }
+
+.menu {
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 70px;
+}
+
+.menu li {
+    display: inline-block;
+    width: 90px;
+}
+
+.menu li:hover .submenu { /* Mouse effect */
+    height: 85px;
+}
+
+.menu > li:hover > a {
+    color: #3e95ff;
+}
+
+.menu > li:hover > a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+.submenu {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    background: #3e9577;
+    height: 0;
+    line-height: 40px;
+    box-sizing: border-box;
+    transition: height 0.3s
+    ease-in-out;
+}
+
+.menu li .submenu a {
+    color: #fff;
+    opacity: 0;
+    font-size: 16px;
+    transition: opacity 0.25s;
+}
+
+.menu > li:hover .submenu a {
+    opacity: 1;
+}
+
+.menu > li .submenu a:hover {
+    background: rgb(0 0 0 / 20%);
+}
+
+.menu > li a {
+    color: #999;
+    position: relative;
+    height: 100%;
+
+}
+
+.menu > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 3px;
+    left: 0px;
+    background: #3e95ff;
+    transition: 
+    all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
+}
+
