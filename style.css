@@ -43,7 +43,8 @@ nav {
     justify-content: center; /* right and left position */
     align-items: center; /* top and buttom position */
     height: 70px;
-    background: black;
+    background: rgba(0, 0, 0, 0.188);
+    border-radius: 20px;
 }
 
 .menu li {
@@ -72,12 +73,16 @@ nav {
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    background: #3e9577;
+    background: rgb(45, 63, 67);
     height: 0;
     line-height: 40px;
     box-sizing: border-box;
     transition: height 0.3s
     ease-in-out;
+    margin-top: 7px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+    
 }
 
 .menu li .submenu a {
@@ -106,8 +111,6 @@ nav {
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
-    bottom: 3px;
     left: 0px;
     background: #3e95ff;
     transition: 
