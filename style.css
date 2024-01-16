@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
+    color: white;
+
+}
+
+h1 {
+    font-variant: small-caps;
+    color: rgb(224, 224, 31);
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px 10px 0 10px;
+    background-color: rgb(236, 255, 127);
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
