@@ -7,7 +7,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+a { /* remove bar nuttom text */
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ body {
     margin: 0;
     display: grid;
     place-items: center; /* Location in page */
-    height: 100vh;
+    height: 25vh;
     background: #1a2027;
 
 }
@@ -40,9 +40,10 @@ nav {
     margin: 0%;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: center; /* right and left position */
+    align-items: center; /* top and buttom position */
     height: 70px;
+    background: black;
 }
 
 .menu li {
